@@ -1,0 +1,149 @@
+.p-footer {
+  &__sns {
+    width: 320px;
+  }
+  &__sns ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 15px 0;
+  }
+  &__sns ul li {
+    width: 45px;
+    margin-right: 15px;
+  }
+  &__magazine {
+    width: 320px;
+    object-fit: cover;
+  }
+
+  &__pay {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  &__pay ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3%;
+  }
+  &__pay ul li {
+    width: 47%;
+    margin: 0 3% 10px 0;
+  }
+  &__pay ul img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__service {
+    width: 320px;
+  }
+  &__service ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3%;
+  }
+  &__service ul li {
+    width: 47%;
+    margin-right: 3%;
+  }
+  &__service ul li img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__faq {
+    width: 670px;
+  }
+  &__faq ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__faq ul li {
+    margin-bottom: 10px;
+    margin-left: 8px;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(7) {
+      width: 180px;
+      margin-right: 20px;
+    }
+    &:nth-child(3),
+    &:nth-child(6) {
+      width: 230px;
+    }
+  }
+  &__faq ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url('#{$bgPath}footer/whiteArrow.png') left center no-repeat;
+      background-size: contain;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__contact {
+    width: 320px;
+    margin-bottom: 60px;
+  }
+  &__contactHours {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  &__contactHead {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    &::after {
+      content: "|";
+      padding: 0 3px;
+    }
+  }
+  &__contactTime {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  &__contactTime span {
+    margin-top: 5px;
+    display: block;
+    font-size: 1.1rem;
+  }
+  &__contact img {
+    margin-top: 7px;
+    width: 320px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .p-footer {
+    &__sns {
+      width: 44vw;
+    }
+    &__magazine {
+      width: 44vw;
+      object-fit: cover;
+    }
+    &__pay {
+      width: 44vw;
+      margin-bottom: 20px;
+    }
+    &__service {
+      width: 44vw;
+    }
+    &__faq {
+      width: 44vw;
+    }
+    &__contact {
+      width: 44vw;
+      margin-bottom: 60px;
+    }
+  }
+}

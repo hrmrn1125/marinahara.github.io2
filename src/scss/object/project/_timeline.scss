@@ -1,0 +1,127 @@
+.p-timeline {
+  font-family: 'Lato', sans-serif;
+  width: 1024px;
+  margin: 0 auto 137px;
+  line-height: 1;
+
+  &__main {
+    position: relative;
+    width: 1024px;
+    height: 632px;
+    margin: 0 auto 40px;
+  }
+  &__mainPic {
+    position: absolute;
+    display: inline;
+    margin-bottom: 54px;
+    width: 100%;
+    height: 100%;
+  }
+  &__mainPic img {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  &__sub {
+    position: relative;
+    border-top: 2px #292929 dashed;
+    padding-top: 40px;
+    width: 1024px;
+    height: 810px;
+  }
+  &__subItemWrap {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    display: block;
+  }
+  &__subList {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  &__subItemWrap {
+    width: 490px;
+    margin-right: 44px;
+    margin-bottom: 40px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  &__subPic {
+    display: inline;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 305px;
+  }
+  &__subPic img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  &__tagList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tag {
+    margin-right: 10px;
+    padding: 6px 18px;
+    color: #000000;
+    background: #FFF;
+    border: solid 1px #000;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  &__date {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    padding-top: 7px;
+    letter-spacing: 0.9px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .p-timeline {
+    width: 82vw;
+
+    &__main {
+      position: relative;
+      width: 82vw;
+      height: 500px;
+    }
+    &__mainPic {
+      position: absolute;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__mainPic img {
+      border-style: none;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    &__sub {
+      width: 82vw;
+      height: 680px;
+    }
+    &__subItemWrap {
+      width: 40vw;
+      margin-right: 2vw;
+      margin-bottom: 40px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    &__subPic {
+      height: 230px;
+      object-fit: cover;
+      object-position: left;
+    }
+    &__subPic img {
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.p-search {
+  width: 1024px;
+  margin: 0 auto 120px;
+
+  &__itemTitle {
+    width: 180px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__itemTitle p {
+    font-size: large;
+  }
+  &__itemWrap {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__itemWrap ul {
+    margin-right: -20px;
+    display: flex;
+  }
+  &__itemWrap ul li {
+    margin-right: 20px;
+    flex: 100%;
+  }
+  &__itemWrap ul li img {
+    width: 100%;
+  }
+
+  &__sizeWrap {
+    width: 1024px;
+  }
+  &__sizeWrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+  }
+  &__sizeWrap ul li {
+    width: 73px;
+    margin: 0 10px 10px 0;
+  }
+  &__sizeWrap ul li p {
+    background: #666;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 0.2em;
+  }
+}
+
+.p-pageTop {
+  width: 60px;
+  margin: 0 auto 75px;
+}
+
+.p-pageTop img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .p-search {
+    width: 90vw;
+    margin: 0 auto 120px;
+
+    &__itemTitle {
+      width: 180px;
+      display: flex;
+      margin-bottom: 10px;
+    }
+    &__itemTitle p {
+      font-size: large;
+    }
+    &__itemWrap {
+      width: 90vw;
+      margin-bottom: 40px;
+    }
+    &__itemWrap ul {
+      margin: 0 auto;
+      flex-wrap: wrap;
+      display: flex;
+    }
+    &__itemWrap ul li {
+      margin-right: 20px;
+      width: 10vw;
+      flex: none;
+    }
+    &__itemWrap ul li img {
+      width: 10vw;
+    }
+
+    &__sizeWrap {
+      width: 90vw;
+    }
+  }
+}

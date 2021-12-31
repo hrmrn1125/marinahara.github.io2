@@ -1,0 +1,138 @@
+.p-new {
+  width: 1024px;
+  margin: 0 auto 98px;
+
+  &__title {
+    width: 300px;
+    margin-bottom: 37px;
+    padding-top: 59px;
+  }
+  &__title img {
+    width: 100%;
+  }
+  &__slider {
+    width: 1000px;
+    margin: 0 auto 50px;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+  }
+  &__sliderTAB {
+    display: none;
+  }
+  &__slider .slick-slide ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__slider .slick-slide li {
+    width: 280px;
+    height: 388px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    &:nth-child(1) {
+      margin-left: 40px;
+    }
+    &:nth-child(4) {
+      margin-left: 40px;
+    }
+  }
+  &__slider .slick-slide li img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 16px;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__slider .slick-slide li div {
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  &__prev {
+    left: 430px;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    width: 13px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    bottom: -25px;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  &__next {
+    right: 430px;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    width: 13px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    bottom: -25px;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .p-new {
+    width: 82vw;
+
+    &__slider {
+      display: none;
+    }
+    &__sliderTAB {
+      display: block;
+      width: 82vw;
+      margin: 0 auto 50px;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+    &__sliderTAB .slick-slide ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    &__sliderTAB .slick-slide li {
+      width: 33vw;
+      height: 240px;
+      margin-right: 35px;
+      margin-bottom: 50px;
+      &:nth-child(1) {
+        margin-left: 35px;
+      }
+      &:nth-child(3) {
+        margin-left: 35px;
+      }
+    }
+    &__sliderTAB .slick-slide li img {
+      width: 33vw;
+      height: 220px;
+      margin-bottom: 16px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__sliderTAB .slick-slide li div {
+      font-size: 15px;
+      line-height: 1.4;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    &__prev {
+      left: 30vw;
+    }
+    &__next {
+      right: 30vw;
+    }
+  }
+}

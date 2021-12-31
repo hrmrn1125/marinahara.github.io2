@@ -1,0 +1,249 @@
+.p-play {
+  width: 1024px;
+  margin: 0 auto 124px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__calendarWrap {
+    width: 468px;
+    margin-right: 56px;
+  }
+  &__calendar {
+    width: 468px !important;
+    border: solid 1px #000000;
+    padding: 40px 55px 30px;
+  }
+  &__calendarTitle {
+    width: 300px;
+    height: 96px;
+    margin: 0 auto 29px;
+    position: relative;
+  }
+  &__calendarTitle img {
+    width: 100%;
+  }
+  &__calendarDate {
+    width: 164px;
+    display: flex;
+    bottom: 0;
+    left: 30%;
+    flex-wrap: wrap;
+    font-family: 'Chelsea Market', cursive;
+    position: absolute;
+  }
+  &__date {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 7px;
+    font-family: 'Chelsea Market', cursive;
+  }
+  &__day {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-family: 'Chelsea Market', cursive;
+  }
+  &__calendarContents {
+    width: 360px;
+    margin: 0 auto 22px;
+  }
+  &__calendarContents img {
+    width: 100%;
+  }
+
+  &__right {
+    width: 500px;
+  }
+  &__omikujiWrap {
+    position: relative;
+    margin-bottom: 43px;
+  }
+  &__omikuji {
+    width: 500px;
+  }
+  &__omikuji img {
+    width: 100%;
+  }
+
+  &__wordWrap {
+    padding-left: 40px;
+  }
+  &__wordTitle {
+    width: 180px;
+    margin-bottom: 26px;
+  }
+  &__wordTitle p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &__word {
+    width: 450px;
+  }
+  &__wordList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 11px;
+  }
+  &__wordList li {
+    margin: 0 6px 10px 0;
+  }
+  &__wordTagInner {
+    padding: 9.5px 20px 9.5px 15px;
+    color: #000000;
+    background: #FFF;
+    border: solid 1px #878787;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    &:hover {
+      border: solid 1px rgb(255, 189, 108);
+      color: rgb(255, 189, 108);
+    }
+  }
+  &__wordTagInner p {
+    &:hover {
+      border-bottom: solid 1px rgb(45, 94, 255);
+    }
+  }
+  &__wordMore {
+    width: 25px;
+    margin-left: 201px;
+  }
+  &__wordMore img {
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .p-play {
+    width: 84vw;
+
+    &__calendarWrap {
+      width: 43vw;
+      margin-right: 3vw;
+    }
+    &__calendar {
+      width: 43vw !important;
+      border: solid 1px #000000;
+      padding: 20px 25px 30px;
+    }
+    &__calendarTitle {
+      width: 250px;
+      height: 82px;
+      margin: 0 auto 29px;
+      position: relative;
+    }
+    &__calendarTitle img {
+      width: 100%;
+    }
+    &__calendarDate {
+      width: 110px;
+      display: flex;
+      bottom: 3px;
+      left: 30%;
+      flex-wrap: wrap;
+      font-family: 'Chelsea Market', cursive;
+      position: absolute;
+    }
+    &__date {
+      font-size: 25px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 7px;
+      font-family: 'Chelsea Market', cursive;
+    }
+    &__day {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-top: 4px;
+      font-family: 'Chelsea Market', cursive;
+    }
+    &__calendarContents {
+      width: 34vw;
+      margin: 0 auto 22px;
+    }
+    &__calendarContents img {
+      width: 100%;
+    }
+
+    &__right {
+      width: 38vw;
+    }
+    &__omikujiWrap {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    &__omikuji {
+      width: 38vw;
+    }
+    &__omikuji img {
+      width: 100%;
+    }
+
+    &__wordWrap {
+      padding-left: 1px;
+    }
+    &__wordTitle {
+      width: 180px;
+      margin-bottom: 15px;
+    }
+    &__wordTitle p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &__word {
+      width: 38vw;
+    }
+    &__wordList {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 11px;
+    }
+    &__wordList li {
+      margin: 0 4px 7px 0;
+    }
+    &__wordTagInner {
+      padding: 8px 18px 8px 13px;
+      color: #000000;
+      background: #FFF;
+      border: solid 1px #878787;
+      border-radius: 30px;
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      &:hover {
+        border: solid 1px rgb(255, 189, 108);
+        color: rgb(255, 189, 108);
+      }
+    }
+    &__wordTagInner p {
+      &:hover {
+        border-bottom: solid 1px rgb(45, 94, 255);
+      }
+    }
+    &__wordMore {
+      width: 25px;
+      margin: 0 auto;
+    }
+    &__wordMore img {
+      width: 100%;
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

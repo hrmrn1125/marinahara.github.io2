@@ -1,0 +1,62 @@
+.l-main {
+  &__topInfo {
+    width: 500px;
+    margin: 0 auto 0 0;
+  }
+  &__infoList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__infoWrap {
+    margin: 20px auto 10px 50px;
+  }
+  &__infoWrap a {
+    padding: 0 1.5rem 0 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background: url('#{$bgPath}/info.png') 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -10px;
+    }
+  }
+  &__infoWrap span {
+    margin-left: 15px;
+  }
+  &__bazar {
+    display: block;
+    width: 232px;
+    margin: 0 50px 50px auto;
+  }
+  &__bazar a {
+    display: flex;
+    border-bottom: #292929 dotted;
+  }
+  &__bazar span {
+    font-size: 20px;
+    margin: 4px 2px 0;
+  }
+  &__bazarIcon {
+    width: 35px;
+    height: 35px;
+  }
+  &__bazarArrow {
+    width: 18px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+}

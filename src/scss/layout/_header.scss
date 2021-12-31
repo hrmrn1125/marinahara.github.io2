@@ -1,0 +1,267 @@
+.l-header {
+  display: block;
+  width: 100vw;
+
+  &__top {
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1;
+  }
+  &__topInner {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 14px 0 12px;
+  }
+  &__topList {
+    width: 310px;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__topList li:nth-child(n+1):nth-child(-n+3) {
+    zoom: normal;
+    width: 26px;
+    margin-right: 8px;
+  }
+  &__topList li:nth-child(n+1):nth-child(-n+3) img {
+    width: 25px;
+  }
+  &__topSearch input[type="hidden"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px 5px;
+    line-height: 1.4;
+    min-height: 1.8em;
+    width: 100%;
+  }
+  &__topSearch input[type="text"] {
+    width: 166px;
+    height: 25px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    text-indent: 10px;
+    border: none;
+    background: none;
+    background-color: #fff;
+  }
+  &__topSearch input[type="image"] {
+    width: 25px;
+    position: absolute;
+    border: none;
+    top: 14px;
+    margin-left: 8px;
+    appearance: none;
+    cursor: pointer;
+    padding: initial;
+  }
+
+  &__bottom{
+    width: 100%;
+    background-color: #151515;
+  }
+  &__bottomInner {
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 16px 0 17px;
+    color: #fff;
+    position: relative;
+  }
+  &__bottomLogo {
+    width: 35vw;
+    position: absolute;
+  }
+  &__bottomLogoWrap {
+    margin: 0 auto 0 0;
+    font-size: 40px;
+  }
+  &__bottomLogoText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 6px;
+  }
+  &__bottomNav {
+    margin-left: auto;
+  }
+  &__bottomNavInner {
+    display: inline-block;
+    margin-left: auto;
+  }
+  &__bottomMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin-left: auto;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 50px;
+  }
+
+  &__bottomSearch {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
+    letter-spacing: 0.1em;
+    margin-right: 15px;
+  }
+  &__bottomSearch a {
+    color: #fff;
+    &::after {
+      content: "";
+      width: 110%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      left: -5%;
+      bottom: -1rem;
+    }
+  }
+  &__bottomSearchMenu {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 15px 30px 15px 40px;
+    background: #fff;
+    border: solid 1px #2e2e2e;
+    z-index: 999;
+    color: #000000;
+  }
+  &__bottomSearchMenu.active {
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__bottomSearchList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__bottomSearchList li {
+    width: 150px;
+    margin-right: 10px;
+    padding: 15px 10px 15px 0;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    border-right: #292929 dotted;
+    border-bottom: #292929 dotted;
+    &:nth-child(6) {
+      border-right: none;
+    }
+    &:nth-child(12) {
+      border-right: none;
+    }
+    &:nth-child(n > 6) {
+      border-bottom: none;
+    }
+  }
+  &__bottomSearchList li a {
+    padding-left: 50px;
+    display: block;
+    line-height: 40px;
+    position: relative;
+    color: #000;
+  }
+  &__bottomSearchList li a img {
+    content: "";
+    margin-top: -20px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+  }
+  &__bottomSearchList li a p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
+    letter-spacing: 0.1em;
+  }
+
+  &__bottomItem {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
+    letter-spacing: 0.1em;
+    margin-right: 15px;
+    color: #fff;
+  }
+
+  &__bottomMember {
+    width: 40px;
+    margin:0 20px 0 0;
+    position: relative;
+    border-left: solid 1px #ffffff;
+  }
+  &__bottomMember img {
+    margin:0 0 0 15px;
+    width: 23px;
+  }
+  &__memberPopUp {
+    display: none;
+    font-size: 15px;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+  }
+  &__memberPopUp.active {
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+  }
+  &__loginWrap {
+    width: 180px;
+    position: absolute;
+    top: 45px;
+    right: -69px;
+    padding: 15px 5px 18px;
+    border: solid 1px #151515;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  &__PopUpTriangle {
+    position: absolute;
+    right: 78px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+  }
+  &__loginWrap a {
+    color: #000;
+  }
+  &__bottomCart {
+    margin-right: 20px;
+  }
+  &__bottomCart img {
+    width: 23px;
+    margin-right: 12px;
+  }
+  &__bottomFavorite img {
+    width: 23px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .l-header__bottomNav {
+    width: 63vw;
+    margin-left: auto;
+  }
+}
