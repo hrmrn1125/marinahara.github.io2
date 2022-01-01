@@ -1,7 +1,7 @@
 .p-timeline {
   font-family: 'Lato', sans-serif;
   width: 1024px;
-  margin: 0 auto 137px;
+  margin: 0 auto 80px;
   line-height: 1;
 
   &__main {
@@ -120,6 +120,110 @@
       object-position: left;
     }
     &__subPic img {
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .p-timeline {
+    width: 92vw;
+
+    &__main {
+      position: relative;
+      width: 92vw;
+      height: 350px;
+      margin: 0 auto 25px;
+    }
+    &__sub {
+      width: 92vw;
+      height: 635px;
+      padding-top: 25px;
+    }
+    &__subItemWrap {
+      width: 45vw;
+      margin-right: 2vw;
+      margin-bottom: 30px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .p-timeline {
+    margin: 0 auto 40px;
+
+    &__subPic {
+      height: 180px;
+      object-fit: cover;
+      object-position: left;
+    }
+    &__sub {
+      width: 92vw;
+      height: 530px;
+      padding-top: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .p-timeline {
+    &__main {
+      position: relative;
+      width: 92vw;
+      height: 250px;
+    }
+    &__subPic {
+      height: 145px;
+      object-fit: cover;
+      object-position: left;
+    }
+    &__sub {
+      width: 92vw;
+      height: 445px;
+      padding-top: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .p-timeline {
+    &__tag {
+      margin-right: 5px;
+      padding: 2px 10px;
+      color: #000000;
+      background: #FFF;
+      border: solid 1px #000;
+      border-radius: 30px;
+      font-size: 8px;
+      font-weight: bold;
+    }
+    &__date {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+      padding-top: 3px;
+      letter-spacing: 0.9px;
+    }
+  }
+}
+
+@media only screen and (max-width: 354px) {
+  .p-timeline {
+    &__main {
+      position: relative;
+      width: 92vw;
+      height: 200px;
+    }
+    &__sub {
+      width: 92vw;
+      height: 380px;
+      padding-top: 25px;
+    }
+    &__subPic {
+      height: 110px;
       object-fit: cover;
       object-position: left;
     }

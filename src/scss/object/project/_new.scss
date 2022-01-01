@@ -1,6 +1,6 @@
 .p-new {
   width: 1024px;
-  margin: 0 auto 98px;
+  margin: 0 auto 80px;
 
   &__title {
     width: 300px;
@@ -86,6 +86,7 @@
 @media only screen and (max-width: 1023px) {
   .p-new {
     width: 82vw;
+    margin: 0 auto 60px;
 
     &__slider {
       display: none;
@@ -133,6 +134,177 @@
     }
     &__next {
       right: 30vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .p-new {
+    width: 90vw;
+    margin: 0 auto 50px;
+
+    &__sliderTAB {
+      display: block;
+      width: 90vw;
+      margin: 0 auto 50px;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+    &__sliderTAB .slick-slide ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    &__sliderTAB .slick-slide li {
+      width: 42vw;
+      height: 295px;
+      margin-right: 2vw;
+      margin-bottom: 50px;
+      &:nth-child(1) {
+        margin-left: 2vw;
+      }
+      &:nth-child(3) {
+        margin-left: 2vw;
+      }
+    }
+    &__sliderTAB .slick-slide li img {
+      width: 42vw;
+      height: 265px;
+      margin-bottom: 16px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__sliderTAB .slick-slide li div {
+      font-size: 15px;
+      line-height: 1.4;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    &__prev {
+      left: 30vw;
+    }
+    &__next {
+      right: 30vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  .p-new {
+    margin: 0 auto 40px;
+
+    &__title {
+      width: 265px;
+      margin-bottom: 30px;
+      padding-top: 45px;
+    }
+    &__sliderTAB .slick-slide li {
+      width: 42vw;
+      height: 205px;
+      margin-right: 2vw;
+      margin-bottom: 50px;
+      &:nth-child(1) {
+        margin-left: 2vw;
+      }
+      &:nth-child(3) {
+        margin-left: 2vw;
+      }
+    }
+    &__sliderTAB .slick-slide li img {
+      width: 42vw;
+      height: 180px;
+      margin-bottom: 16px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__sliderTAB .slick-slide li div {
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    &__prev {
+      left: 25vw;
+    }
+    &__next {
+      right: 25vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .p-new {
+    &__title {
+      margin-bottom: 23px;
+      padding-top: 37px;
+    }
+    &__sliderTAB .slick-slide li {
+      width: 42vw;
+      height: 190px;
+      margin-right: 2vw;
+      margin-bottom: 50px;
+      &:nth-child(1) {
+        margin-left: 2vw;
+      }
+      &:nth-child(3) {
+        margin-left: 2vw;
+      }
+    }
+    &__sliderTAB .slick-slide li img {
+      width: 42vw;
+      height: 150px;
+      margin-bottom: 16px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__sliderTAB .slick-slide li div {
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    &__prev {
+      left: 18vw;
+    }
+    &__next {
+      right: 18vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  .p-new {
+    &__sliderTAB .slick-slide li {
+      width: 42vw;
+      height: 155px;
+      margin-right: 2vw;
+      margin-bottom: 50px;
+      &:nth-child(1) {
+        margin-left: 2vw;
+      }
+      &:nth-child(3) {
+        margin-left: 2vw;
+      }
+    }
+    &__sliderTAB .slick-slide li img {
+      width: 42vw;
+      height: 127px;
+      margin-bottom: 16px;
+      object-fit: cover;
+      object-position: top;
+    }
+    &__sliderTAB .slick-slide li div {
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+    }
+    &__prev {
+      left: 18vw;
+    }
+    &__next {
+      right: 18vw;
     }
   }
 }

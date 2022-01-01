@@ -59,4 +59,44 @@
 }
 
 @media only screen and (max-width: 699px) {
+  .l-main {
+    &__topInfo {
+      width: 100vw;
+      margin-right: auto;
+    }
+    &__infoList {
+      margin-bottom: 13px;
+    }
+    &__infoWrap {
+      margin: 13px auto 0 5px;
+      &:nth-child(2) {
+        margin: 7px auto 0 5px;
+      }
+    }
+    &__infoWrap a {
+      padding: 0 1.5rem 0 10px;
+      display: inline-block;
+      position: relative;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      &::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        background: url('#{$bgPath}/info.png') 0 0 no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -10px;
+      }
+    }
+    &__infoWrap span {
+      margin-left: 15px;
+    }
+    &__bazar {
+      display: none;
+    }
+  }
 }
