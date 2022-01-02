@@ -44,10 +44,12 @@
   }
   &__service ul li {
     width: 47%;
+    height: 107px;
     margin-right: 3%;
   }
   &__service ul li img {
     width: 100%;
+    height: 107px;
     object-fit: cover;
   }
 
@@ -139,6 +141,16 @@
     &__service {
       width: 44vw;
     }
+    &__service ul li {
+      width: 47%;
+      height: 130px;
+      margin-right: 3%;
+    }
+    &__service ul li img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+    }
     &__faq {
       width: 44vw;
     }
@@ -162,6 +174,88 @@
     &__contact {
       width: 44vw;
       margin-bottom: 60px;
+    }
+    &__contact img {
+      margin-top: 7px;
+      width: 44vw;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 809px) {
+  &__service ul li {
+    width: 47%;
+    height: 95px;
+    margin-right: 3%;
+  }
+  &__service ul li img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .p-footer {
+    &__sns {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__magazine {
+      width: 47%;
+      object-fit: cover;
+    }
+    &__pay {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__service {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__service ul li {
+      width: 140px;
+      height: 100px;
+      margin-right: 3%;
+    }
+    &__service ul li img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__faq {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__faq ul li {
+      margin-bottom: 10px;
+      margin-left: 8px;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(8)  {
+        width: 180px;
+        margin-right: 0;
+      }
+      &:nth-child(3),
+      &:nth-child(6) {
+        width: 180px;
+      }
+    }
+    &__contact {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    &__contact img {
+      margin-top: 7px;
+      width: 47%;
+      object-fit: cover;
+    }
+    &__contactHours {
+      margin-bottom: 13px;
     }
   }
 }
