@@ -270,6 +270,31 @@
     &__calendarContents img {
       width: 100%;
     }
+    &__calendarDate {
+      width: 120px;
+      display: flex;
+      bottom: 5px;
+      left: 32%;
+      flex-wrap: wrap;
+      font-family: 'Chelsea Market', cursive;
+      position: absolute;
+    }
+    &__date {
+      font-size: 21px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 7px;
+      font-family: 'Chelsea Market', cursive;
+    }
+    &__day {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-top: 4px;
+      font-family: 'Chelsea Market', cursive;
+    }
 
     &__right {
       width: 84vw;
