@@ -132,7 +132,7 @@
   &__itemDesc {
     text-align: center;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.9;
     letter-spacing: 1.5px;
   }
   &__itemDesc p {
@@ -247,5 +247,215 @@
   .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
     width: 38vw;
     height: 302px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .p-cosales {
+    width: 94vw;
+
+    &__title {
+      width: 94vw;
+    }
+    &__themeTitle {
+      font-size: 18px;
+    }
+    &__rank {
+      width: 94vw;
+    }
+    &__no1 {
+      width: 94vw;
+      margin: 0 auto 40px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__itemWrap1 {
+      width: 44vw;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    &__itemRank1 {
+      width: 60px;
+      margin-bottom: 13px;
+    }
+    &__itemTitle {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    &__itemText1 {
+      width: 42vw;
+      padding-top: 8px;
+    }
+    &__itemDesc1 {
+      font-size: 13px;
+    }
+    &__line {
+      width: 94vw;
+      margin: 0 auto 38px;
+      border-top: 1px solid #000;
+    }
+
+    &__no23 {
+      width: 94vw;
+    }
+    &__no2 {
+      width: 46.5vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__no3 {
+      width: 46.5vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__itemRank {
+      width: 60px;
+      margin: 0 auto;
+      margin-bottom: 19px;
+    }
+    &__itemRank img {
+      width: 60px;
+    }
+    &__itemDesc {
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+
+  .p-cosales__itemWrap1 .p-cosales__itemBorder {
+    width: 44vw;
+    height: 210px;
+  }
+  .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
+    width: 42.5vw;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .p-cosales {
+    &__no2 {
+      width: 47vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__no3 {
+      width: 47vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__no23Border {
+      display: none;
+    }
+  }
+
+  .p-cosales__no23 .p-cosales__itemBorder {
+    width: 149px;
+    height: 149px;
+    margin: 0 auto 35px;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+  }
+  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item {
+    width: 144px;
+    height: 144px;
+  }
+  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item img {
+    object-fit: cover;
+    object-position: right;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .p-cosales {
+    &__no1 {
+      display: block;
+    }
+    &__itemWrap1 {
+      width: 57vw;
+      margin: 0 auto;
+    }
+    &__itemText1 {
+      width: 94vw;
+      padding-top: 15px auto;
+    }
+    &__itemRank1 {
+      margin: 8px auto 10px;
+    }
+    &__itemTitle {
+      text-align: center;
+    }
+    &__itemTitle1 p {
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__itemDesc1 {
+      text-align: center;
+    }
+    &__no2 {
+      width: 47vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__no3 {
+      width: 47vw;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__no23Border {
+      display: none;
+    }
+  }
+
+  .p-cosales__itemWrap1 .p-cosales__itemBorder {
+    width: 65vw;
+    height: 208px;
+  }
+  .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
+    width: 63vw;
+    height: 200px;
+  }
+
+  .p-cosales__no23 .p-cosales__itemBorder {
+    width: 149px;
+    height: 149px;
+    margin: 0 auto 35px;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+  }
+  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item {
+    width: 144px;
+    height: 144px;
+  }
+  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item img {
+    object-fit: cover;
+    object-position: right;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  .p-cosales {
+    &__no2 {
+      width: 45vw;
+      margin-right: 1vw;
+    }
+    &__no3 {
+      width: 45vw;
+      margin-left: 1vw;
+    }
+  }
+
+  .p-cosales__no23 .p-cosales__itemBorder {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+  }
+  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item {
+    width: 126px;
+    height: 126px;
   }
 }

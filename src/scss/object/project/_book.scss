@@ -1,5 +1,5 @@
 .p-book {
-  margin-top: 210px;
+  margin-top: 200px;
 
   &__topWrap {
     width: 100%;
@@ -118,6 +118,8 @@
 
 @media only screen and (max-width: 909px) {
   .p-book {
+    margin-top: 100px;
+
     &__middle {
       width: 100vw;
     }
@@ -140,4 +142,8 @@
       width: 40vw;
     }
   }
+}
+
+@media only screen and (max-width: 449px) {
+
 }

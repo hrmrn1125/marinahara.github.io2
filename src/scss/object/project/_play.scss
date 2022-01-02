@@ -127,6 +127,7 @@
 @media only screen and (max-width: 1023px) {
   .p-play {
     width: 84vw;
+    margin: 0 auto 100px;
 
     &__calendarWrap {
       width: 43vw;
@@ -245,5 +246,130 @@
   }
   .hide {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .p-play {
+    display: block;
+    margin: 0 auto 80px;
+
+    &__calendarWrap {
+      width: 84vw;
+      margin-right: 3vw;
+    }
+    &__calendar {
+      width: 84vw !important;
+      border: solid 1px #000000;
+      padding: 20px 25px 30px;
+    }
+    &__calendarContents {
+      width: 60vw;
+      margin: 0 auto 22px;
+    }
+    &__calendarContents img {
+      width: 100%;
+    }
+
+    &__right {
+      width: 84vw;
+    }
+    &__omikujiWrap {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    &__omikuji {
+      width: 84vw;
+    }
+    &__omikuji img {
+      width: 100%;
+    }
+
+    &__word {
+      width: 84vw;
+    }
+    &__wordList {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 11px;
+    }
+    &__wordList li {
+      margin: 0 15px 10px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 354px) {
+  .p-play {
+    margin: 0 auto 60px;
+
+    &__calendar {
+      padding: 30px 20px 35px;
+    }
+    &__calendarTitle {
+      width: 61vw;
+      height: 67px;
+      margin: 0 auto 24px;
+      position: relative;
+    }
+    &__calendarTitle img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &__calendarDate {
+      width: 35vw;
+      display: flex;
+      bottom: 3px;
+      left: 30%;
+      flex-wrap: wrap;
+      font-family: 'Chelsea Market', cursive;
+      position: absolute;
+    }
+    &__date {
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 7px;
+      font-family: 'Chelsea Market', cursive;
+    }
+    &__day {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-top: 4px;
+      font-family: 'Chelsea Market', cursive;
+    }
+  }
+}
+
+@media only screen and (max-width: 329px) {
+  .p-play {
+    &__calendarDate {
+      width: 33vw;
+      display: flex;
+      bottom: 10px;
+      left: 30%;
+      flex-wrap: wrap;
+      font-family: 'Chelsea Market', cursive;
+      position: absolute;
+    }
+    &__date {
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 7px;
+      font-family: 'Chelsea Market', cursive;
+    }
+    &__day {
+      font-size: 7px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-top: 4px;
+      font-family: 'Chelsea Market', cursive;
+    }
   }
 }
