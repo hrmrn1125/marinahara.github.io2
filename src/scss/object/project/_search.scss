@@ -119,3 +119,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 449px) {
+  .p-search {
+    &__itemWrap ul li {
+      margin-right: 1vw;
+      width: 17vw;
+      flex: none;
+    }
+    &__itemWrap ul li img {
+      width: 100%;
+    }
+  }
+}
