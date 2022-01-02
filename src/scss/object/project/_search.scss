@@ -61,7 +61,7 @@
 @media only screen and (max-width: 1023px) {
   .p-search {
     width: 90vw;
-    margin: 0 auto 120px;
+    margin: 0 auto 100px;
 
     &__itemTitle {
       width: 180px;
@@ -91,6 +91,31 @@
 
     &__sizeWrap {
       width: 90vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .p-search {
+    width: 90vw;
+    margin: 0 auto 80px;
+
+    &__itemWrap {
+      width: 90vw;
+      margin-bottom: 40px;
+    }
+    &__itemWrap ul {
+      margin: 0 auto;
+      flex-wrap: wrap;
+      display: flex;
+    }
+    &__itemWrap ul li {
+      margin-right: 1vw;
+      width: 14vw;
+      flex: none;
+    }
+    &__itemWrap ul li img {
+      width: 100%;
     }
   }
 }

@@ -335,12 +335,12 @@
 @media only screen and (max-width: 499px) {
   .p-cosales {
     &__no2 {
-      width: 47vw;
+      width: 44vw;
       margin-left: 0;
-      margin-right: 0;
+      margin-right: 6vw;
     }
     &__no3 {
-      width: 47vw;
+      width: 44vw;
       margin-left: 0;
       margin-right: 0;
     }
@@ -369,6 +369,19 @@
 
 @media only screen and (max-width: 374px) {
   .p-cosales {
+    &__themeTitle {
+      font-size: 16px;
+    }
+    &__themeNum {
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin: 0 0 41px;
+    }
+    &__themeComment {
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
     &__no1 {
       display: block;
     }
@@ -394,12 +407,12 @@
       text-align: center;
     }
     &__no2 {
-      width: 47vw;
+      width: 42vw;
       margin-left: 0;
-      margin-right: 0;
+      margin-right: 10vw;
     }
     &__no3 {
-      width: 47vw;
+      width: 42vw;
       margin-left: 0;
       margin-right: 0;
     }
@@ -438,12 +451,12 @@
 @media only screen and (max-width: 329px) {
   .p-cosales {
     &__no2 {
-      width: 45vw;
-      margin-right: 1vw;
+      width: 43vw;
+      margin-right: 8vw;
     }
     &__no3 {
-      width: 45vw;
-      margin-left: 1vw;
+      width: 43vw;
+      margin-left: 0;
     }
   }
 

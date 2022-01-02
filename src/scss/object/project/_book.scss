@@ -120,6 +120,10 @@
   .p-book {
     margin-top: 100px;
 
+    &__title {
+      width: 302px;
+      margin-bottom: 65px;
+    }
     &__middle {
       width: 100vw;
     }
@@ -141,9 +145,73 @@
     &__item {
       width: 40vw;
     }
+    &__bottomWrap {
+      margin-bottom: 140px;
+    }
   }
 }
 
-@media only screen and (max-width: 449px) {
-
+@media only screen and (max-width: 499px) {
+  .p-book {
+    &__middle {
+      display: block;
+      padding: 60px 0 44px;
+      margin: 0 auto;
+    }
+    &__left {
+      width: 88vw;
+      margin-right: 0;
+      margin-left: 6vw;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+    &__title {
+      width: 56vw;
+      margin-bottom: 15px;
+    }
+    &__theme {
+      width: 88vw;
+      height: auto;
+      background-color: #ffffff;
+      padding: 5px 10px;
+      display: flex;
+    }
+    &__themeTitle {
+      font-size: 13px;
+      line-height: 2;
+      letter-spacing: 1px;
+      margin-top: 3px;
+      margin-bottom: 20px;
+      margin-right: 0;
+      padding-left: 10px;
+    }
+    &__themeText {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: 6px;
+      font-weight: bold;
+      writing-mode: horizontal-tb;
+      padding-right: 0;
+      margin: 0 auto;
+    }
+    &__right {
+      width: 88vw;
+      margin-left: 6vw;
+    }
+    &__border {
+      width: 88vw;
+      margin: 0 auto 30px;
+    }
+    &__item {
+      width: 84vw;
+      margin: 0 auto 30px;
+    }
+    &__bottomWrap {
+      margin-bottom: 120px;
+    }
+  }
 }
