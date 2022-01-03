@@ -95,5 +95,3 @@ function wordListOpen() {
 $(".p-play__wordMore").on("click",() => {
   wordListOpen();
 });
-
-
