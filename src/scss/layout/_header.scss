@@ -156,11 +156,13 @@
     box-sizing: border-box;
     text-align: left;
     position: relative;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__bottomSearchList li a {
     padding-left: 50px;
     display: block;
-    line-height: 40px;
     position: relative;
     color: #000;
   }
@@ -177,7 +179,6 @@
     font-size: 14px;
     font-weight: bold;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
-    letter-spacing: 0.1em;
   }
 
   &__bottomItem {
@@ -217,7 +218,7 @@
     width: 180px;
     position: absolute;
     top: 45px;
-    right: -69px;
+    right: -76px;
     padding: 15px 5px 18px;
     border: solid 1px #151515;
     background-color: #ffffff;

@@ -136,6 +136,22 @@
     &__spmenuList .p-search__itemWrap {
       width: 100%;
     }
+    &__spmenuList .p-search__itemWrap ul {
+      display: block;
+    }
+    &__spmenuList .p-search__itemWrap ul li a {
+      display: flex;
+    }
+    &__spmenuList .p-search__itemWrap ul li a img {
+      width: 40px;
+      height: 40px;
+      margin-right: 18px;
+    }
+    &__spmenuList .p-search__itemWrap ul li a p {
+      font-size: 17px;
+      white-space: nowrap;
+      padding-top: 5px;
+    }
     &__spmenuList .p-search__size {
       margin-top: 20px;
       flex-wrap: wrap;

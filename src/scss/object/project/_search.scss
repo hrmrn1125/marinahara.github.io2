@@ -20,6 +20,7 @@
   }
   &__itemWrap ul li {
     margin-right: 20px;
+    margin-bottom: 10px;
     flex: 100%;
     &:hover {
       opacity: 0.6;
@@ -87,8 +88,8 @@
       display: flex;
     }
     &__itemWrap ul li {
-      margin-right: 20px;
-      width: 10vw;
+      margin-right: 30px;
+      width: 8vw;
       flex: none;
     }
     &__itemWrap ul li img {
