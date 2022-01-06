@@ -14,6 +14,52 @@ $(() => {
   console.log(hoge)
 })
 
+// アイテムメニュークリック
+$(".l-header__searchTrriger").click(() => {
+  $(".l-header__bottomSearchMenu").toggle(),
+  $(".l-header__searchTrriger").toggleClass('rollover');
+});
+
+// 会員アイコンクリック
+$(".l-header__bottomMember").click(() => {
+$(".l-header__memberPopUp").toggle(),
+$(".l-header__bottomMember").toggleClass('rollover');
+});
+
+// ハンバーガーメニュー開閉
+$(".p-header__trigger").on('click',() => {
+  if(!$(".p-header__spmenu").is(':animated')){
+    $(".p-header__trigger").toggleClass('active');
+    $('html').toggleClass('open');
+    $('.back').toggleClass('open');
+  }
+  return false;
+});
+
+// ハンバーガーメニューの背景クリック時
+$(".back").on('click', function(){
+  if($(this).hasClass('open')) {
+    $(this).removeClass('open');
+    $(".p-header__trigger").removeClass('active');
+    $('html').removeClass('open');
+  }
+});
+
+// ヘッダー固定
+function FixedAnime() {
+	var headerH = $('.l-header').outerHeight(true);
+	var scroll = $(window).scrollTop();
+	if (scroll >= headerH && window.matchMedia('(max-width: 699px)').matches) {
+		$('.l-header').addClass('fixed');
+	}else{
+		$('.l-header').removeClass('fixed');
+	}
+}
+
+$(window).scroll(() => {
+	FixedAnime();
+});
+
 // 新作スライダー
 $(() => {
   $(document).ready(() => {
@@ -95,3 +141,4 @@ function wordListOpen() {
 $(".p-play__wordMore").on("click",() => {
   wordListOpen();
 });
+

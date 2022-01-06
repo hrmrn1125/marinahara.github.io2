@@ -156,17 +156,6 @@
     box-sizing: border-box;
     text-align: left;
     position: relative;
-    border-right: #292929 dotted;
-    border-bottom: #292929 dotted;
-    &:nth-child(6) {
-      border-right: none;
-    }
-    &:nth-child(12) {
-      border-right: none;
-    }
-    &:nth-child(n > 6) {
-      border-bottom: none;
-    }
   }
   &__bottomSearchList li a {
     padding-left: 50px;
@@ -320,5 +309,12 @@
     &__bottomFavoriteMB img {
       width: 23px;
     }
+  }
+
+  .l-header.fixed {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
   }
 }

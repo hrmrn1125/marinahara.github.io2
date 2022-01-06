@@ -21,6 +21,9 @@
   &__itemWrap ul li {
     margin-right: 20px;
     flex: 100%;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__itemWrap ul li img {
     width: 100%;
@@ -37,6 +40,9 @@
   &__sizeWrap ul li {
     width: 73px;
     margin: 0 10px 10px 0;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__sizeWrap ul li p {
     background: #666;
