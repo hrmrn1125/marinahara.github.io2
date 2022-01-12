@@ -12,15 +12,15 @@
   }
   &__themeWrap {
     text-align: center;
-    padding-top: 55px;
-    margin-bottom: 56px;
+    padding-top: 40px;
+    margin-bottom: 35px;
   }
   &__themeTitle {
     font-size: 22px;
     line-height: 1.5;
     font-weight: bold;
     letter-spacing: 1.7px;
-    margin-bottom: 19px;
+    margin-bottom: 15px;
   }
   &__themeTitle p {
     margin: 0;
@@ -29,7 +29,7 @@
   &__themeNum {
     font-size: 14px;
     letter-spacing: 1px;
-    margin: 0 0 41px;
+    margin: 0 0 35px;
   }
   &__themeNum p {
     margin: 0;
@@ -58,7 +58,7 @@
   }
   &__itemWrap1 {
     width: 287px;
-    margin-left: 42px;
+    margin-left: 40px;
     margin-right: 40px;
   }
   &__itemText1 {
@@ -106,8 +106,8 @@
   }
   &__no2 {
     width: 240px;
-    margin-left: 62px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 22px;
   }
   &__itemRank {
     width: 200px;
@@ -137,7 +137,7 @@
   }
   &__itemDesc p {
     margin: 0;
-    padding: 0 0 0;
+    padding: 0;
   }
   &__no23Border {
     width: 1px;
@@ -148,8 +148,8 @@
 
   &__no3 {
     width: 240px;
-    margin-left: 20px;
-    margin-right: 43px;
+    margin-left: 22px;
+    margin-right: 40px;
   }
 }
 
@@ -203,9 +203,9 @@
       flex-wrap: wrap;
     }
     &__itemWrap1 {
-      width: 39vw;
-      margin-left: 20px;
-      margin-right: 10px;
+      width: 36vw;
+      margin-left: 40px;
+      margin-right: 20px;
     }
     &__itemText1 {
       width: 37vw;
@@ -217,40 +217,53 @@
       border-top: 1px solid #000;
     }
     &__no2 {
-      width: 40vw;
+      width: 40.5vw;
       margin-left: 0;
       margin-right: 0;
     }
     &__no3 {
-      width: 40vw;
+      width: 40.5vw;
       margin-left: 0;
       margin-right: 0;
     }
     &__no23Border {
-      width: 1px;
+      width: 1vw;
       border-left: 1px solid #000;
       margin-left: 0;
       margin-right: 0;
     }
     &__no23 {
-      width: 82vw;
+      width: 100%;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
     }
-  }
-
-  .p-cosales__itemWrap1 .p-cosales__itemBorder {
-    width: 39vw;
-    height: 310px;
-  }
-  .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
-    width: 38vw;
-    height: 302px;
+    &__itemRank {
+      margin-left: 40px;
+    }
+    &__no23 .p-cosales__itemBorder {
+      width: 30.5vw;
+      height: 255px;
+      margin: 0 0 30px 40px;
+      border-right: solid 1px #000000;
+      border-bottom: solid 1px #000000;
+    }
+    &__no23 .p-cosales__itemBorder .p-cosales__item {
+      width: 30vw;
+      height: 250px;
+    }
+    &__itemWrap1 .p-cosales__itemBorder {
+      width: 36vw;
+      height: 310px;
+    }
+    &__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
+      width: 35vw;
+      height: 302px;
+    }
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 694px) {
   .p-cosales {
     width: 94vw;
 
@@ -265,14 +278,21 @@
     }
     &__no1 {
       width: 94vw;
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
       display: flex;
       flex-wrap: wrap;
     }
     &__itemWrap1 {
-      width: 44vw;
-      margin-left: 20px;
-      margin-right: 10px;
+      width: 48vw;
+      margin: 0 2vw;
+    }
+    &__itemWrap1 .p-cosales__itemBorder {
+      width: 48vw;
+      height: 295px;
+    }
+    &__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
+      width: 47vw;
+      height: 290px;
     }
     &__itemRank1 {
       width: 60px;
@@ -283,8 +303,9 @@
       margin-bottom: 5px;
     }
     &__itemText1 {
-      width: 42vw;
+      width: 40vw;
       padding-top: 8px;
+      margin-right: 2vw;
     }
     &__itemDesc1 {
       font-size: 13px;
@@ -320,20 +341,44 @@
       text-align: center;
       font-size: 13px;
     }
-  }
-
-  .p-cosales__itemWrap1 .p-cosales__itemBorder {
-    width: 44vw;
-    height: 210px;
-  }
-  .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
-    width: 42.5vw;
-    height: 200px;
+    &__no23 .p-cosales__itemBorder {
+      width: 43vw;
+      height: 205px;
+      margin: 0 2vw 20px;
+      border-right: solid 1px #000000;
+      border-bottom: solid 1px #000000;
+    }
+    &__no23 .p-cosales__itemBorder .p-cosales__item {
+      width: 42vw;
+      height: 200px;
+    }
   }
 }
 
 @media only screen and (max-width: 499px) {
   .p-cosales {
+    &__itemWrap1 {
+      width: 48vw;
+      margin: 0 2vw 0 0;
+    }
+    &__itemText1 {
+      width: 42vw;
+      margin-right: 0;
+    }
+    &__itemWrap1 .p-cosales__itemBorder {
+      width: 48vw;
+      height: 225px;
+    }
+    &__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
+      width: 47vw;
+      height: 220px;
+    }
+    &__itemDesc1 {
+      letter-spacing: 0.5px;
+    }
+    &__itemDesc {
+      letter-spacing: 0.5px;
+    }
     &__no2 {
       width: 44vw;
       margin-left: 0;
@@ -347,23 +392,29 @@
     &__no23Border {
       display: none;
     }
-  }
-
-  .p-cosales__no23 .p-cosales__itemBorder {
-    width: 149px;
-    height: 149px;
-    margin: 0 auto 35px;
-    border-right: solid 1px #000000;
-    border-bottom: solid 1px #000000;
-  }
-  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item {
-    width: 144px;
-    height: 144px;
-  }
-  .p-cosales__no23 .p-cosales__itemBorder .p-cosales__item img {
-    object-fit: cover;
-    object-position: right;
-    height: 100%;
+    &__itemRank {
+      width: 60px;
+      margin: 0 auto 0 0;
+      margin-bottom: 19px;
+    }
+    &__itemTitle {
+      text-align: left;
+    }
+    &__itemDesc {
+      text-align: left;
+      font-size: 13px;
+    }
+    &__no23 .p-cosales__itemBorder {
+      width: 44vw;;
+      height: 200px;
+      margin: 0 auto 20px 0;
+      border-right: solid 1px #000000;
+      border-bottom: solid 1px #000000;
+    }
+    &__no23 .p-cosales__itemBorder .p-cosales__item {
+      width: 43vw;
+      height: 195px;
+    }
   }
 }
 
@@ -422,8 +473,8 @@
   }
 
   .p-cosales__itemWrap1 .p-cosales__itemBorder {
-    width: 65vw;
-    height: 208px;
+    width: 64vw;
+    height: 205px;
   }
   .p-cosales__itemWrap1 .p-cosales__itemBorder .p-cosales__item {
     width: 63vw;

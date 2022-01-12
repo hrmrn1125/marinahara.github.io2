@@ -1,5 +1,5 @@
 .p-book {
-  margin-top: 200px;
+  margin-top: 50px;
 
   &__topWrap {
     width: 100%;
@@ -60,7 +60,7 @@
     line-height: 2;
     letter-spacing: 1px;
     margin-bottom: 47px;
-    padding-left: 12px;
+    text-align: center;
   }
   &__themeText {
     width: 146px;
@@ -96,7 +96,7 @@
   &__bottomWrap {
     width: 100%;
     background-color: #eae9e4;
-    margin-bottom: 220px;
+    margin-bottom: 50px;
   }
   &__bottom {
     width: 100%;
@@ -118,8 +118,6 @@
 
 @media only screen and (max-width: 909px) {
   .p-book {
-    margin-top: 100px;
-
     &__title {
       width: 302px;
       margin-bottom: 65px;
@@ -144,9 +142,6 @@
     }
     &__item {
       width: 40vw;
-    }
-    &__bottomWrap {
-      margin-bottom: 140px;
     }
   }
 }
@@ -209,9 +204,6 @@
     &__item {
       width: 84vw;
       margin: 0 auto 30px;
-    }
-    &__bottomWrap {
-      margin-bottom: 120px;
     }
   }
 }

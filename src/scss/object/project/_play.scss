@@ -1,6 +1,6 @@
 .p-play {
   width: 1024px;
-  margin: 0 auto 124px;
+  margin: 0 auto 60px;
   display: flex;
   flex-wrap: wrap;
 
@@ -127,7 +127,6 @@
 @media only screen and (max-width: 1023px) {
   .p-play {
     width: 84vw;
-    margin: 0 auto 100px;
 
     &__calendarWrap {
       width: 43vw;
@@ -252,7 +251,6 @@
 @media only screen and (max-width: 699px) {
   .p-play {
     display: block;
-    margin: 0 auto 80px;
 
     &__calendarWrap {
       width: 84vw;
@@ -326,8 +324,6 @@
 
 @media only screen and (max-width: 354px) {
   .p-play {
-    margin: 0 auto 60px;
-
     &__calendar {
       padding: 30px 20px 35px;
     }

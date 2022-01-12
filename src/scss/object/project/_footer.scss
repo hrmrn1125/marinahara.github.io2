@@ -14,6 +14,9 @@
   &__magazine {
     width: 320px;
     object-fit: cover;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__pay {
@@ -28,6 +31,9 @@
   &__pay ul li {
     width: 47%;
     margin: 0 3% 10px 0;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__pay ul img {
     width: 100%;
@@ -46,10 +52,14 @@
     width: 47%;
     height: 107px;
     margin-right: 3%;
+    overflow: hidden;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__service ul li img {
     width: 100%;
-    height: 107px;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -89,6 +99,9 @@
       display: inline-block;
       vertical-align: middle;
     }
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__contact {
@@ -122,6 +135,9 @@
     margin-top: 7px;
     width: 320px;
     object-fit: cover;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -143,12 +159,11 @@
     }
     &__service ul li {
       width: 47%;
-      height: 130px;
+      height: 109px;
       margin-right: 3%;
     }
     &__service ul li img {
       width: 100%;
-      height: 130px;
       object-fit: cover;
     }
     &__faq {
@@ -191,7 +206,6 @@
   }
   &__service ul li img {
     width: 100%;
-    height: 95px;
     object-fit: cover;
   }
 }
@@ -221,7 +235,6 @@
     }
     &__service ul li img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
     }
     &__faq {

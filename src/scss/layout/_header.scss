@@ -122,6 +122,9 @@
       left: -5%;
       bottom: -1rem;
     }
+    &:hover {
+      opacity: 0.6;
+    }
   }
   &__bottomSearchMenu {
     left: 0;
@@ -188,6 +191,9 @@
     letter-spacing: 0.1em;
     margin-right: 15px;
     color: #fff;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__bottomMember {
@@ -236,6 +242,9 @@
   }
   &__loginWrap a {
     color: #000;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__bottomCart {
     margin-right: 20px;

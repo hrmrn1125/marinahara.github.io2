@@ -1,19 +1,22 @@
 .p-insta {
   width: 1024px;
-  margin: 0 auto 160px;
+  margin: 0 auto 45px;
 
   &__title {
-    width: 653px;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    vertical-align: middle;
   }
   &__title img {
-    width: 100%;
+    width: 330px;
   }
   &__btn {
-    margin-bottom: 42px;
+    margin-top: 15px;
+    margin-left: 25px;
   }
   &__btn a {
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
     background-color: #282828;
     border-radius: 5px;
@@ -67,28 +70,18 @@
 @media only screen and (max-width: 1023px) {
   .p-insta {
     width: 90vw;
-    margin: 0 auto 150px;
 
     &__list {
       display: none;
     }
     &__title {
-      width: 75vw;
-      margin-bottom: 25px;
+      display: block;
     }
     &__title img {
-      width: 100%;
+      width: 40vw;
     }
     &__btn {
-      margin-bottom: 42px;
-    }
-    &__btn a {
-      font-size: 12px;
-      color: #fff;
-      background-color: #282828;
-      border-radius: 5px;
-      padding: 5px 10px;
-      text-decoration: none;
+      margin-left: 0;
     }
     &__listTAB {
       display: block;
@@ -144,17 +137,8 @@
 
 @media only screen and (max-width: 649px) {
   .p-insta {
-    margin: 0 auto 120px;
-
-    &__title {
-      width: 85vw;
-      margin-bottom: 20px;
-    }
     &__title img {
-      width: 100%;
-    }
-    &__btn {
-      margin-bottom: 30px;
+      width: 45vw;
     }
     &__listTAB {
       display: block;
@@ -178,17 +162,8 @@
 
 @media only screen and (max-width: 529px) {
   .p-insta {
-    margin: 0 auto 100px;
-
-    &__title {
-      width: 85vw;
-      margin-bottom: 20px;
-    }
     &__title img {
-      width: 100%;
-    }
-    &__btn {
-      margin-bottom: 30px;
+      width: 50vw;
     }
     &__listTAB {
       display: block;
@@ -212,8 +187,9 @@
 
 @media only screen and (max-width: 399px) {
   .p-insta {
-    margin: 0 auto 70px;
-
+    &__title img {
+      width: 60vw;
+    }
     &__listTAB ul li {
       width: 27vw;
       height: 90px;
