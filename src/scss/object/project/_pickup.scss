@@ -110,9 +110,6 @@
       margin-right: 15px;
       background-color: #fff;
       position: relative;
-      &:first-child {
-        margin-left: 20px;
-      }
     }
     &__frame {
       width: 25vw;
@@ -141,9 +138,6 @@
       margin-right: 15px;
       background-color: #fff;
       position: relative;
-      &:first-child {
-        margin-left: 20px;
-      }
     }
   }
 }
@@ -156,9 +150,6 @@
       margin-right: 15px;
       background-color: #fff;
       position: relative;
-      &:first-child {
-        margin-left: 25px;
-      }
     }
   }
 }
@@ -172,7 +163,7 @@
       background-color: #fff;
       position: relative;
       &:first-child {
-        margin-left: 25px;
+        margin-left: 16px;
       }
     }
   }

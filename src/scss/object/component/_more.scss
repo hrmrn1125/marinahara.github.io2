@@ -2,7 +2,8 @@
   width: 120px;
   margin: 0 0 0 auto;
 
-  &__preorder {
+  &__preorder,
+  &__pickup {
     position: absolute;
     width: 120px;
     right: 5vw;
@@ -21,7 +22,8 @@
     width: 100px;
     margin: 0 0 0 auto;
 
-    &__preorder {
+    &__preorder,
+    &__pickup {
       position: absolute;
       width: 100px;
       right: 5vw;
